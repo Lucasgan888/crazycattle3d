@@ -1,0 +1,52 @@
+{
+  "mainGame": {
+    "id": "racing-championship",
+    "name": "Racing Championship",
+    "slug": "racing-championship",
+    "description": "Experience the thrill of high-speed racing! Compete in championships, customize your cars, and race on tracks around the world in this exciting racing game.",
+    "keywords": ["Racing Championship", "car racing", "racing game", "fast cars", "championship", "speed racing", "online racing"],
+    "thumbnail": "/assets/racing-championship/og-image.jpg",
+    "embed": {
+      "type": "local",
+      "localPath": "/game/racing-championship/index.html"
+    },
+    "seoContent": {
+      "targetWordCount": 800,
+      "keywordDensity": 4.5,
+      "category": "Racing",
+      "features": [
+        "Realistic car physics",
+        "Multiple racing tracks",
+        "Car customization",
+        "Championship mode",
+        "Time trial challenges",
+        "Weather effects",
+        "Replay system",
+        "Garage management"
+      ]
+    }
+  },
+  "site": {
+    "name": "Racing Championship",
+    "domain": "racing-championship.org"
+  },
+  "seo": {
+    "siteName": "Racing Championship",
+    "domain": "racing-championship.org",
+    "titleTemplate": "%s - Racing Championship Speed Games",
+    "defaultTitle": "Racing Championship - Free Online Car Racing Game",
+    "description": "Feel the adrenaline rush in Racing Championship! Race fast cars, compete in tournaments, and become the ultimate racing champion. Play free online now!",
+    "keywords": ["Racing Championship", "car racing games", "speed racing", "online racing", "free racing game", "championship racing"],
+    "openGraph": {
+      "siteName": "Racing Championship",
+      "type": "website",
+      "image": "/assets/racing-championship/og-image.jpg",
+      "url": "https://racing-championship.org"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@RacingGames"
+    },
+    "canonicalBase": "https://racing-championship.org"
+  }
+}

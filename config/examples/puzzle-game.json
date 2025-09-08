@@ -1,0 +1,52 @@
+{
+  "mainGame": {
+    "id": "puzzle-master-pro",
+    "name": "Puzzle Master Pro",
+    "slug": "puzzle-master-pro",
+    "description": "Challenge your mind with Puzzle Master Pro! Solve complex puzzles, unlock new levels, and compete with players worldwide in this brain-teasing adventure.",
+    "keywords": ["Puzzle Master Pro", "puzzle game", "brain teaser", "logic game", "free puzzle", "mind game", "thinking game"],
+    "thumbnail": "/assets/puzzle-master-pro/og-image.jpg",
+    "embed": {
+      "type": "iframe",
+      "iframeSrc": "https://puzzlegames.example.com/puzzle-master-pro/"
+    },
+    "seoContent": {
+      "targetWordCount": 900,
+      "keywordDensity": 3.8,
+      "category": "Puzzle",
+      "features": [
+        "100+ challenging levels",
+        "Daily puzzle challenges",
+        "Leaderboard system",
+        "Hint system available",
+        "Mobile-friendly design",
+        "Save progress automatically",
+        "Multiple difficulty modes",
+        "Educational content"
+      ]
+    }
+  },
+  "site": {
+    "name": "Puzzle Master Pro",
+    "domain": "puzzle-master-pro.net"
+  },
+  "seo": {
+    "siteName": "Puzzle Master Pro",
+    "domain": "puzzle-master-pro.net",
+    "titleTemplate": "%s - Puzzle Master Pro Brain Training",
+    "defaultTitle": "Puzzle Master Pro - Free Online Puzzle & Brain Training Game",
+    "description": "Train your brain with Puzzle Master Pro! Solve challenging puzzles, improve your logic skills, and enjoy hours of mind-bending fun. Play free online now!",
+    "keywords": ["Puzzle Master Pro", "brain training", "puzzle games", "logic puzzles", "free puzzle game", "mind games"],
+    "openGraph": {
+      "siteName": "Puzzle Master Pro",
+      "type": "website",
+      "image": "/assets/puzzle-master-pro/og-image.jpg",
+      "url": "https://puzzle-master-pro.net"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@PuzzleGames"
+    },
+    "canonicalBase": "https://puzzle-master-pro.net"
+  }
+}

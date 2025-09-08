@@ -1,0 +1,52 @@
+{
+  "mainGame": {
+    "id": "super-action-game-a",
+    "name": "Super Action Game A",
+    "slug": "super-action-game-a",
+    "description": "An incredible action-packed adventure game with stunning 3D graphics and immersive gameplay. Experience the ultimate gaming adventure in your browser!",
+    "keywords": ["Super Action Game A", "action game", "adventure", "3D graphics", "free online game", "browser game", "unblocked"],
+    "thumbnail": "/assets/super-action-game-a/og-image.jpg",
+    "embed": {
+      "type": "local",
+      "localPath": "/game/super-action-game-a/index.html"
+    },
+    "seoContent": {
+      "targetWordCount": 850,
+      "keywordDensity": 4.2,
+      "category": "Action",
+      "features": [
+        "Stunning 3D graphics",
+        "Immersive storyline",
+        "Free to play",
+        "No download required",
+        "Multiplayer support",
+        "Regular updates",
+        "Cross-platform compatibility",
+        "Advanced physics engine"
+      ]
+    }
+  },
+  "site": {
+    "name": "Super Action Game A",
+    "domain": "super-action-game-a.com"
+  },
+  "seo": {
+    "siteName": "Super Action Game A",
+    "domain": "super-action-game-a.com",
+    "titleTemplate": "%s - Super Action Game A Official Site",
+    "defaultTitle": "Super Action Game A - Free Online Action Adventure Game",
+    "description": "Play Super Action Game A online for free! Experience stunning 3D graphics and immersive gameplay in this action-packed adventure. No download required - play directly in your browser.",
+    "keywords": ["Super Action Game A", "free online game", "action adventure", "3D graphics", "browser game", "unblocked game"],
+    "openGraph": {
+      "siteName": "Super Action Game A",
+      "type": "website",
+      "image": "/assets/super-action-game-a/og-image.jpg",
+      "url": "https://super-action-game-a.com"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "site": "@YourGameStudio"
+    },
+    "canonicalBase": "https://super-action-game-a.com"
+  }
+}

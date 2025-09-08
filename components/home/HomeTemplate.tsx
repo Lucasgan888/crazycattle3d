@@ -10,6 +10,7 @@ import { FAQ } from "@/components/faq/FAQ";
 import { Rating } from "@/components/rating/Rating";
 import { Footer } from "@/components/layout/Footer";
 import { getOtherGames } from "@/app/games/game-data";
+import AdUnit, { AdaptiveBanner, MobileStickyAd } from "@/components/Ads/AdUnit";
 
 export function HomeTemplate() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -34,14 +35,37 @@ export function HomeTemplate() {
         onSearch={handleSearch}
       />
 
+      {/* 顶部横幅广告 / Header Banner Ad */}
+      <div className="w-full flex justify-center py-1 bg-gray-50/50">
+        <AdaptiveBanner position="headerBanner" className="max-w-6xl" />
+      </div>
+
       <main className="container mx-auto px-4 py-8">
         <GameSection />
+        
+        {/* 游戏上方广告 / Above Game Ad */}
+        <div className="w-full flex justify-center my-8">
+          <AdUnit position="gameTopBanner" />
+        </div>
+        
         <OtherGames
           games={getOtherGames()}
           onGameSelect={setActiveGame}
         />
+        
+        {/* 内容区域广告 / Content Area Ad */}
+        <div className="w-full flex justify-center my-12">
+          <AdUnit position="contentBanner" />
+        </div>
+        
         <Features />
         <WhatIs />
+        
+        {/* 游戏下方广告 / Below Game Ad */}
+        <div className="w-full flex justify-center my-12">
+          <AdUnit position="gameBottomBanner" />
+        </div>
+        
         <HowToPlay />
         <FAQ />
         <section className="mb-16" id="rating">
@@ -50,6 +74,9 @@ export function HomeTemplate() {
       </main>
 
       <Footer />
+      
+      {/* 移动端底部广告 / Mobile Sticky Ad */}
+      <MobileStickyAd />
     </div>
   );
 }

@@ -7,9 +7,26 @@
     "dev": "next dev",
     "verification": "node generate-verification.js",
     "build": "next build && next-sitemap && npm run verification",
+    "build:sitemap": "npm run clean-sitemap && next-sitemap",
     "start": "next start",
     "lint": "next lint",
-    "sitemap": "npm run clean-sitemap && next-sitemap"
+    "sitemap": "npm run clean-sitemap && next-sitemap",
+    "switch-game": "ts-node --esm tools/switch-main-game.ts",
+    "switch-preview": "npm run switch-game -- --dry-run",
+    "switch-upload": "npm run switch-game -- --upload",
+    "switch-iframe": "npm run switch-game -- --embed=iframe",
+    "validate-switch": "ts-node --esm tools/validate-switch.ts",
+    "validate-quick": "npm run validate-switch -- --quick",
+    "validate-report": "npm run validate-switch -- --report",
+    "game:switch": "npm run switch-game",
+    "game:validate": "npm run validate-switch",
+    "game:backup-list": "npm run switch-game list-backups",
+    "game:restore": "npm run switch-game restore",
+    "analytics:validate": "ts-node --esm -e \"import { getAnalyticsStatus } from './config/analytics'; console.log('🔍 Analytics Status:', getAnalyticsStatus());\"",
+    "ads:validate": "ts-node --esm -e \"import { getAdsStatus } from './config/ads'; console.log('🎯 Ads Status:', getAdsStatus());\"",
+    "submit-sitemap": "ts-node --esm tools/submit-sitemap.ts",
+    "seo:submit": "npm run submit-sitemap",
+    "seo:validate": "npm run analytics:validate && npm run ads:validate"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -73,6 +90,9 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "fs-extra": "^11.2.0",
+    "ts-node": "^10.9.2",
+    "@types/fs-extra": "^11.0.4"
   }
 }
